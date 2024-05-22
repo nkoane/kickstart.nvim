@@ -240,6 +240,14 @@ require('lazy').setup({
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
 
+  -- This is to remember the last place I was when I last openened the file:
+  -- require ('farmergreg/vim-lastplace').setup({}),
+  {
+    'farmergreg/vim-lastplace',
+    opts = {},
+    config = function() end,
+  },
+
   -- Here is a more advanced example where we pass configuration
   -- options to `gitsigns.nvim`. This is equivalent to the following Lua:
   --    require('gitsigns').setup({ ... })
