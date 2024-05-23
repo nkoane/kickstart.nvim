@@ -587,6 +587,8 @@ require('lazy').setup({
         cssls = {},
         eslint = {},
         zls = {}, -- soon, we will write some code in this
+        emmet_ls = {},
+        emmet_language_server = {},
         --
 
         lua_ls = {
