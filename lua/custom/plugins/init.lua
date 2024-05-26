@@ -33,4 +33,11 @@ return {
       vim.keymap.set({ 'n', 'v' }, '<leader>xe', require('nvim-emmet').wrap_with_abbreviation)
     end,
   },
+  --- buffer control
+  {
+
+    vim.keymap.set('n', '<leader>cb', '<cmd>bdelete<CR>', { desc = 'close current buffer' }),
+    vim.keymap.set('n', '<leader>cw', '<C-w><C-q>', { desc = 'close current window' }),
+    -- vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
+  },
 }
