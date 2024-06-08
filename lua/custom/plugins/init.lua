@@ -58,4 +58,11 @@ return {
     -- vim.opt.expandtab = true
     -- vim.opt.smartindent = true
   },
+  -- some AI, why not!
+  {
+    'supermaven-inc/supermaven-nvim',
+    config = function()
+      require('supermaven-nvim').setup {}
+    end,
+  },
 }
